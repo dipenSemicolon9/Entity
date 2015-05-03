@@ -1,0 +1,34 @@
+//
+//  Setup-Prefix.pch
+//  Setup
+//
+//  Created by Tops on 1/9/15.
+//  Copyright (c) 2015 Tops. All rights reserved.
+//
+
+#ifndef Setup_Setup_Prefix_pch
+#define Setup_Setup_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+
+#import "Entity/Global.h"
+#import "AppDelegate.h"
+#import "Entity/AFNetworking/AFNetworking.h"
+#import "Entity/AJNotificationView/AJNotificationView.h"
+#import "Entity/SIAlertView/SIAlertView.h"
+#import "Entity/MBProgressHUD.h"
+#import "Entity/Singleton.h"
+#import "Entity/WebserviceCaller.h"
+#import <StoreKit/StoreKit.h>
+#import "Entity/AFNetworking/UIKit+AFNetworking/UIImageView+AFNetworking_UIActivityIndicatorView.h"
+//#define NSLog //
+#endif
+
+
+#endif
